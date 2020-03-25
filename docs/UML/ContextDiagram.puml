@@ -5,7 +5,7 @@
 
 ' LAYOUT_WITH_LEGEND
 
-title System context diagram for medical services organization site
+title Диаграмма контекста для интернет приложения медицинской организации
 
 Person(customer, "Пользователь", "Пользователь сайта")
 Person(appointment_admin, Администратор Записей, "Администратор Записей")

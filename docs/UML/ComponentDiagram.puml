@@ -20,7 +20,7 @@ Container_Boundary(appointment_sys, "API Application") {
     ContainerDb(db, "База данных", "SQLite", "Хранит информацию о сделанных записях и данных клиентов.")
     Rel(auth_daemon, SMS_adapter, "Используя")
     Rel(appointment_daemon, SQLite_adapter, "Используя")
-    Rel(appointment_daemon, SMS_adapter, "Формирует сообщение")
+    Rel(appointment_daemon, SMS_adapter, "Передает команду")
     Rel(sign, auth_daemon, "Используя")
     Rel(appointment, appointment_daemon, "Используя")
     Rel(CRM, appointment_daemon, "Используя")   

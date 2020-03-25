@@ -10,7 +10,7 @@ Person(appointment_admin, Администратор Записей, "Админ
 
 System_Boundary(c1, "Система записи на приём") {
     Container(appointment_sys, "Форма записи", "C#, ASP.NET", "Позволяет клиенту заведения сделать запись")
-    ContainerDb(database, "База Данных + Api", "C#, SQLLite", "Тут хранится информация о сделанных записях и данных пользователей")
+    ContainerDb(database, "База Данных + API", "C#, SQLLite", "Тут хранится информация о сделанных записях и данных пользователей")
 }
 
 Rel(customer, appointment_sys, "Используя", "HTTPS")
